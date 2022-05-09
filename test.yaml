@@ -1,0 +1,5 @@
+/:
+  get:
+    status: 200
+    content:
+      message: Hello World!
