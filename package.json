@@ -8,7 +8,7 @@
   },
   "scripts": {
     "docker:build": "docker build -t docker-test .",
-    "docker:run": "yarn docker:stop && docker run -dp 3000:3000 --name docker-test docker-test",
+    "docker:run": "yarn docker:stop && docker run -p 3000:3000 --name docker-test docker-test",
     "docker:stop": "docker stop docker-test || true && docker rm docker-test || true",
     "start": "yaml-api test.yaml"
   }
